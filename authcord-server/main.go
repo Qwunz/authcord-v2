@@ -23,10 +23,6 @@ import (
 	"github.com/jroimartin/gocui"
 )
 
-// @0xSegFaulted NOTE: As of right now, there are two main vulnerabilities. First, someone could watch the blockchain and verify with someone's hash, effectively getting it for free.
-// Second, someone with a copy of the loader could register their hwid with a hash before the legitmate customer can.
-// To fix the first problem I suggest having a delay on checking blockchain, so the customer can run the command before sending the money (just spawn a new goroutine for this).
-// The second problem could be fixed by giving the customers a private license only they can see.
 var cnt int = 1
 var cnt_max int = 12
 var cnt_msgs int = 0
