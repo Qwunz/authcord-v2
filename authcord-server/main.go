@@ -328,8 +328,6 @@ func layout(gui *gocui.Gui) error {
 	return nil
 }
 
-/* cui made by skidfaulted (thats why it sucksss) */
-
 func main() {
 
 	/*
